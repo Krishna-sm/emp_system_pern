@@ -1,0 +1,13 @@
+{
+  "name": "emp_system",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"cd client && yarn dev\" \"cd server && yarn dev\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
