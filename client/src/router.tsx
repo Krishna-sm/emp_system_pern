@@ -6,6 +6,7 @@ import RegisterPage from "./pages/RegisterPage";
 import ForgetPassword from "./pages/ForgetPassword";
 import MainLayout from "./layouts/MainLayout";
 import Dashboard from "./pages/dashboard";
+import Profile from "./pages/dashboard/profile";
 
 export const router = createBrowserRouter([
     {
@@ -35,6 +36,10 @@ export const router = createBrowserRouter([
                     {
                         path:'',
                         Component:Dashboard
+                    },
+                    {
+                        path:'profile',
+                        Component:Profile
                     }
                 ]
             }

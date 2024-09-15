@@ -1,6 +1,6 @@
-import React, { ReactNode } from 'react'
+import   { ReactNode } from 'react'
 import { Link, Outlet, useLocation } from 'react-router-dom'
-import { Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
+import { Sidebar, Menu, MenuItem  } from 'react-pro-sidebar';
 import { RxDashboard } from 'react-icons/rx';
 import { useSidebar } from '../context/Sidebar';
 import { FaArrowAltCircleRight } from 'react-icons/fa';
@@ -44,7 +44,7 @@ const MainLayout = () => {
   </Menu>
 </Sidebar>
                                 {/* content */}
-                                <div className="py-10 px-2">
+                                <div className="py-10 w-full px-2">
                                     <Outlet/>
                                 </div>
                         </div>  

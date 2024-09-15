@@ -26,7 +26,11 @@ export const SidebarContextProvider = ({children}:{children:ReactNode})=>{
 
     const [isOpen,setIsOpen] = useState( JSON.parse(localStorage.getItem("isOpen") || "false"))
     const [isHide,setIsHide] = useState( JSON.parse(localStorage.getItem("isHide") || "false"))
-
+        console.log({
+            isOpen,
+            isHide
+        });
+        
     
 const toggleSidebar = ()=>{
         setIsOpen(!isOpen)

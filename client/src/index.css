@@ -48,3 +48,7 @@ body{
   background-color: transparent !important;
 
 }
+
+html::-webkit-scrollbar{
+  @apply hidden;
+}
