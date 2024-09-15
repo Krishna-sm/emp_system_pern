@@ -3,8 +3,9 @@ import { Link, Outlet, useLocation } from 'react-router-dom'
 import { Sidebar, Menu, MenuItem  } from 'react-pro-sidebar';
 import { RxDashboard } from 'react-icons/rx';
 import { useSidebar } from '../context/Sidebar';
+import { MdOutlineCategory } from "react-icons/md";
 import { FaArrowAltCircleRight } from 'react-icons/fa';
-
+import { FiUsers } from "react-icons/fi";
 interface SidebarItemProps {
     label:string
     Icon:ReactNode
@@ -35,7 +36,8 @@ const MainLayout = () => {
 
                         </button>
             <SidebarItem label='Dashboard' Icon={<RxDashboard className='text-3xl' />} link=''   />
-            <SidebarItem label='Profile' Icon={<RxDashboard className='text-3xl' />} link='/profile'   />
+            <SidebarItem label='Categories' Icon={<MdOutlineCategory className='text-3xl' />} link='/categories'   />
+            <SidebarItem label='Employee' Icon={<FiUsers className='text-3xl' />} link='/employies'   />
     
               
 

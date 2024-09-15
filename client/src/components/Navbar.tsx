@@ -2,6 +2,7 @@ import React from 'react'
 import { IoMenuOutline } from 'react-icons/io5'
 import { Link, useLocation } from 'react-router-dom'
 import { useSidebar } from '../context/Sidebar'
+import ProfileButton from './ProfileButton'
 
 const Navbar = () => {
 
@@ -27,11 +28,18 @@ const Navbar = () => {
     </div>
     <nav className="md:ml-auto flex gap-x-5 flex-wrap items-center text-base justify-center">
     
-                <Link to='/'>Home</Link>
+               {!location.pathname.startsWith("/dashboard") 
+                  &&
+                    <>
+
+<Link to='/'>Home</Link>
                 <Link to='/'>About</Link>
                 <Link to='/'>Contact</Link>
                 <Link to='/login'>Login</Link>
                 <Link to='/dashboard'>Dashboard</Link>
+                    </>
+               }
+               {location.pathname.startsWith("/dashboard") && <ProfileButton/>}
     </nav>
     
   </div>

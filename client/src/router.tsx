@@ -7,6 +7,10 @@ import ForgetPassword from "./pages/ForgetPassword";
 import MainLayout from "./layouts/MainLayout";
 import Dashboard from "./pages/dashboard";
 import Profile from "./pages/dashboard/profile";
+import Categories from "./pages/dashboard/categories";
+import Employies from "./pages/dashboard/employies";
+
+
 
 export const router = createBrowserRouter([
     {
@@ -40,7 +44,17 @@ export const router = createBrowserRouter([
                     {
                         path:'profile',
                         Component:Profile
-                    }
+                    },
+                    {
+                        path:'categories',
+                        Component:Categories
+                    },
+                    {
+                        path:'employies',
+                        Component:Employies
+                    },
+                    
+                    
                 ]
             }
         ]

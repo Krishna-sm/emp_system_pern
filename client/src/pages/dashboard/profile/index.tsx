@@ -1,3 +1,5 @@
+import SubmitButton from "../../../components/SubmitButton"
+
  
 const Profile = () => {
   return (
@@ -5,38 +7,74 @@ const Profile = () => {
            <section className="relative pt-36 pb-24">
   <img src="https://pagedone.io/asset/uploads/1705471739.png" alt="cover-image" className="w-full absolute top-0 left-0 z-0 h-60" />
   <div className="w-full max-w-7xl mx-auto px-6 md:px-8">
-    <div className="flex items-center justify-center relative z-10 mb-2.5">
+    {/* <div className="flex items-center justify-center relative z-10 mb-2.5">
       <img src="https://pagedone.io/asset/uploads/1705471668.png" alt="user-avatar-image" className="border-4 border-solid border-white rounded-full" />
-    </div>
-    <div className="flex flex-col sm:flex-row max-sm:gap-5 items-center justify-between mb-5">
-      <ul className="flex items-center gap-5">
-        <li> <a href="javascript:;" className="flex items-center gap-2 cursor-pointer group">
-            <svg width={20} height={20} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12.5 14.0902L7.5 14.0902M2.5 9.09545V14.0902C2.5 15.6976 2.5 16.5013 2.98816 17.0006C3.47631 17.5 4.26198 17.5 5.83333 17.5H14.1667C15.738 17.5 16.5237 17.5 17.0118 17.0006C17.5 16.5013 17.5 15.6976 17.5 14.0902V10.9203C17.5 9.1337 17.5 8.24039 17.1056 7.48651C16.7112 6.73262 15.9846 6.2371 14.5313 5.24606L11.849 3.41681C10.9528 2.8056 10.5046 2.5 10 2.5C9.49537 2.5 9.04725 2.80561 8.151 3.41681L3.98433 6.25832C3.25772 6.75384 2.89442 7.0016 2.69721 7.37854C2.5 7.75548 2.5 8.20214 2.5 9.09545Z" stroke="black" strokeWidth="1.6" strokeLinecap="round" />
-            </svg>
-            <span className="font-medium text-base leading-7 text-gray-900">Home</span>
-          </a>
-        </li>
-        <li> <a href="javascript:;" className="flex items-center gap-2 cursor-pointer group">
-            <svg xmlns="http://www.w3.org/2000/svg" width={5} height={20} viewBox="0 0 5 20" fill="none">
-              <path d="M4.12567 1.13672L1 18.8633" stroke="#E5E7EB" strokeWidth="1.6" strokeLinecap="round" />
-            </svg>
-            <span className="font-medium text-base leading-7 text-gray-400">Account</span>
-          </a>
-        </li>
-        <li><a href="javascript:;" className="flex items-center gap-2 cursor-pointer group">
-            <svg xmlns="http://www.w3.org/2000/svg" width={5} height={20} viewBox="0 0 5 20" fill="none">
-              <path d="M4.12567 1.13672L1 18.8633" stroke="#E5E7EB" strokeWidth="1.6" strokeLinecap="round" />
-            </svg>
-            <span className="font-medium text-base leading-7 text-gray-400">Profile</span>
-            <span className="rounded-full py-1.5 px-2.5 bg-indigo-50 flex items-center justify-center font-medium text-xs text-indigo-600">New</span>
-          </a>
-        </li>
-      </ul>
-       
-    </div>
-    <h3 className="text-center font-manrope font-bold text-3xl leading-10 text-gray-900 mb-3">Jenny Wilson</h3>
-    <p className="font-normal text-base leading-7 text-gray-500 text-center mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis excepturi adipisci iste rerum ipsam nisi suscipit porro corporis nemo aliquid. Et, saepe iste.</p>
+
+    </div> */}
+   <div className="mx-auto flex justify-center w-[141px] h-[141px] relative z-10 mb-2.5 bg-blue-300/20 rounded-full bg-[url('https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw4fHxwcm9maWxlfGVufDB8MHx8fDE3MTEwMDM0MjN8MA&ixlib=rb-4.0.3&q=80&w=1080')] bg-cover bg-center bg-no-repeat">
+  <div className="bg-white/90 rounded-full w-6 h-6 text-center ml-28 mt-4">
+    <input type="file" name="profile" id="upload_profile" hidden required />
+    <label htmlFor="upload_profile">
+      <svg data-slot="icon" className="w-6 h-5 text-blue-700" fill="none" strokeWidth="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z">
+        </path>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM18.75 10.5h.008v.008h-.008V10.5Z">
+        </path>
+      </svg>
+    </label>
+  </div>
+</div>
+
+              <div className="py-10 flex flex-col gap-y-4">
+                {/** start */}
+              <h1 className="text-center text-3xl text-white  poppins-bold">Krishna</h1>
+
+                  <div className="bg-white/5  w-full lg:w-[70%] rounded-md shadow-lg  xl:w-1/2 py-10 mx-auto px-5">
+                      <h1 className="poppins-semibold capitalize text-xl">Update Profile</h1>
+                      <hr />
+
+                            <form action="" className="w-full flex flex-col gap-y-1">
+                              <div className="mb-3 py-1 w-full">
+                                        <label htmlFor="name">Name</label>
+                                        <input type="text" className="w-full bg-transparent border outline-none border-white py-2 rounded-md ring-2 px-3 ring-red-400" placeholder="Update Your Name" />
+                              </div>
+                              <div className="mb-3  w-full">
+                                        <label htmlFor="email">Email</label>
+                                        <input type="text" className="w-full bg-transparent border outline-none border-white py-2 rounded-md ring-2 px-3 ring-blue-400" placeholder="Update Your Email" />
+                              </div>
+                              <div className="">
+                                <SubmitButton value="Update Profile" className="flex justify-center items-center gap-x-2 bg-red-500 w-full py-2  rounded-md shadow-md outline-none ring-1 ring-red-600" />
+                              </div>
+                            </form>
+
+                  </div>
+
+
+          {/* change password */}
+
+          <div className="bg-white/5  my-6 w-full lg:w-[70%] rounded-md shadow-lg  xl:w-[60%] py-10 mx-auto px-5">
+                    <h1 className="poppins-semibold capitalize text-xl">Change Password</h1>
+                    <hr />
+
+                          <form action="" className="w-full flex flex-col gap-y-1">
+                            <div className="mb-3 py-1 w-full">
+                                      <label htmlFor="old_password">Old Password</label>
+                                      <input type="text" className="w-full bg-transparent border outline-none border-white py-2 rounded-md ring-2 px-3 ring-red-400" placeholder="Enter Old Password" />
+                            </div>
+                            <div className="mb-3  w-full">
+                                      <label htmlFor="new_password">New Password</label>
+                                      <input type="text" className="w-full bg-transparent border outline-none border-white py-2 rounded-md ring-2 px-3 ring-blue-400" placeholder="Enter New Password" />
+                            </div>
+                            <div className="">
+                              <SubmitButton value="Update Password" className="flex justify-center items-center gap-x-2 bg-red-500 w-full py-2  rounded-md shadow-md outline-none ring-1 ring-red-600" />
+                            </div>
+                          </form>
+
+                </div>
+
+{/**emd */}
+              </div>
+    
     <div className="flex items-center justify-center gap-5">
       <a href="javascript:;" className="p-3 rounded-full border border-solid border-gray-300 group bg-gray-50 transition-all duration-500 hover:bg-indigo-700 hover:border-indigo-700">
         <svg width={20} height={20} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
