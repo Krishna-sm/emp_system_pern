@@ -24,7 +24,7 @@ const ForgetPassword = () => {
     return (
     <>
 
-                <section className="min-h-[80vh] flex flex-col justify-center items-center ">
+                <section className="min-h-[80vh]  flex flex-col justify-center items-center ">
                     <Formik validationSchema={validationSchema} initialValues={initialValues} 
                     onSubmit={submitHandler}
                     >   

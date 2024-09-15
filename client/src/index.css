@@ -37,3 +37,14 @@ body{
   font-weight: 700;
   font-style: normal;
 }
+
+
+
+.ps-menu-button:hover{
+  background-color: transparent !important;
+}
+
+.ps-sidebar-container{
+  background-color: transparent !important;
+
+}

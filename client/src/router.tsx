@@ -4,6 +4,8 @@ import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import ForgetPassword from "./pages/ForgetPassword";
+import MainLayout from "./layouts/MainLayout";
+import Dashboard from "./pages/dashboard";
 
 export const router = createBrowserRouter([
     {
@@ -25,6 +27,16 @@ export const router = createBrowserRouter([
             {
                 path:'forget-password',
                 Component:ForgetPassword
+            },
+            {
+                path:'dashboard',
+                Component:MainLayout,
+                children:[
+                    {
+                        path:'',
+                        Component:Dashboard
+                    }
+                ]
             }
         ]
     }

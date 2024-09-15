@@ -7,7 +7,7 @@ const App = () => {
   return (
     <>
     <Navbar/>
-       <section className="xl:w-[90%] mx-auto">
+       <section className=" mx-auto">
           <Outlet/>
        </section>
     </>
