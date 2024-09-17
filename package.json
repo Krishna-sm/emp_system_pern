@@ -9,6 +9,8 @@
   "license": "ISC",
   "dependencies": {
     "@heroicons/react": "^2.1.5",
-    "concurrently": "^9.0.1"
+    "concurrently": "^9.0.1",
+    "sweetalert2": "^11.14.0",
+    "sweetalert2-react-content": "^5.0.7"
   }
 }

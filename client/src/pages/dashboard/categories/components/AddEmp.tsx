@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { GoPlusCircle } from 'react-icons/go'
 import { MdOutlineClose } from 'react-icons/md'
 import * as yup from 'yup'
+import { SweetAlert } from '../../../../components/SweetAlert'
 export default function AddEmp() {
   let [isOpen, setIsOpen] = useState(false)
 
@@ -24,7 +25,12 @@ export default function AddEmp() {
 
         const OnSubmitHandler = (e:AppEmpInputs,{resetForm}:any)=>{
                     console.log(e);
-                    resetForm()
+                    // resetForm()
+                    SweetAlert({
+                      icon:'success',
+                      title:'success',
+                      text:'Form Submit Successfully'
+                    })
         }
 
 
