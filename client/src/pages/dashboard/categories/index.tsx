@@ -1,8 +1,9 @@
-import BreadCrums from "../../../components/BreadCrums"
-import { GoPlusCircle } from "react-icons/go";
+import BreadCrums from "../../../components/BreadCrums" 
 import TableCard from "./components/TableCard";
-import AddEmp from "./components/AddEmp";
+import AddEmp from "./components/AddEmp"; 
 const Categories = ()=>{
+ 
+
         return <div className=" w-full lg:w-[90%] mx-auto">
                 <BreadCrums title="categories" />
                                 <div className="add flex justify-end">
@@ -17,13 +18,7 @@ const Categories = ()=>{
                                 <div className="show py-10    ">
 
                                                         <table className="w-full border py-10">
-                                                                <tr className="border">
-                                                                        <th className="border text-center">ID</th>
-                                                                        <th className="border text-center">Title</th>
-                                                                        <th className="border text-center hidden lg:block">Desc</th>
-                                                                        <th className="border text-center">isActive</th>
-                                                                        <th className="border text-center">Action</th>
-                                                                </tr>
+                                                          
                                                                <tbody>
                                                                 {
                                                                         Array(10).fill(null).map((cur,i)=>{
@@ -31,6 +26,15 @@ const Categories = ()=>{
                                                                         })
                                                                 }
                                                                </tbody>
+                                                               <thead>
+                                                              <tr className="border">
+                                                                        <th className="border text-center">ID</th>
+                                                                        <th className="border text-center">Title</th>
+                                                                        <th className="border text-center hidden lg:block">Desc</th>
+                                                                        <th className="border text-center">isActive</th>
+                                                                        <th className="border text-center">Action</th>
+                                                                </tr>
+                                                              </thead>
                                                         </table>
 
                                 </div>
