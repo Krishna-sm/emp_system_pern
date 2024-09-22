@@ -8,6 +8,27 @@
       "when": 1726088962036,
       "tag": "0000_daily_morbius",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1727045452163,
+      "tag": "0001_colorful_sharon_carter",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1727045494639,
+      "tag": "0002_puzzling_sleeper",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1727045746490,
+      "tag": "0003_cultured_blade",
+      "breakpoints": true
     }
   ]
 }
